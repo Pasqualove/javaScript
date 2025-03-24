@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort com objetos</title>
+</head>
+<body>
+    <label for="text">Insira um modelo e ano: </label>
+    <input type="text" id="carroNovo" name="carroNovo">
+    <input type="number" id="anoNovo" name="anoNovo">
+    <button onclick="adicionaCarros()">Adicionar carro</button>
+    <br>
+    <label for="sort">Escolha uma forma de ordenação: </label>
+    <select name="sort" id="sort">
+        <option value="1">por nome</option>
+        <option value="2">por nome(inverso)</option>
+        <option value="3">por ano</option>
+        <option value="4">por ano(inverso)</option>
+    </select>
+    <button onclick="ordena()">Ordenar</button>
+    <p id="teste"></p>
+
+    <script src="16sort2.js"></script>
+</body>
+</html>
