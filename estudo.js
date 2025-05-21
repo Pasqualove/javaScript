@@ -1,4 +1,4 @@
-//função anonima
+//função anônima
 //button onclick{ () => { console.log("teste") }}
 //função sem nome especificado, arrow function
 
