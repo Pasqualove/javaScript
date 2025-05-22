@@ -24,6 +24,7 @@ const carro = {
 };
 
 //criação de mais de uma variável em uma única linha
+
 const { marca, ano } = carro
 
 console.log(marca);
@@ -41,6 +42,22 @@ nomes = ["augusto", "joao", "paulo"]
 nomes2 = [...nomes, "pedro"]
 
 console.log(nomes2);
+
+//factory function para criar objeto 
+
+function CriaPessoa(nome, idade){
+    return{
+        nome,
+        idade,
+        apresentar(){
+            console.log(`Olá, meu nome é ${nome} e tenho ${idade} anos.`)
+        }
+    };
+}
+
+const pessoa = CriaPessoa("Augusto", 24);
+
+pessoa.apresentar();
 
 //map cria um novo array de acordo com uma função
 
